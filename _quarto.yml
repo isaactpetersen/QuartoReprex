@@ -2,55 +2,19 @@ project:
   type: website
 
 website:
-  title: "Quarto Website"
-  repo-url: https://github.com/DevPsyLab/QuartoWebsite
+  title: "Quarto Reprex"
+  repo-url: https://github.com/isaactpetersen/QuartoReprex
   repo-actions: [edit, source, issue]
-  google-analytics: G-NLF0RWB1CE
-  navbar:
-    logo: images/labLogo.png
-    search: true
-    tools:
-      - icon: github
-        menu:
-          - text: "Source Code"
-            href: https://github.com/DevPsyLab/QuartoWebsite
-          - text: "Report a Bug"
-            href: https://github.com/DevPsyLab/QuartoWebsite/issues/new
-      - icon: twitter
-        href: https://twitter.com/devpsylab
-      - icon: facebook
-        href: https://www.facebook.com/DevPsyLab
-      - icon: instagram
-        href: https://www.instagram.com/devpsylab
-    left:
-      - href: index.qmd
-        text: Home
-      - text: Links
-        menu:
-        - text: Lab Wiki
-          href: https://devpsylab.github.io/LabWiki/
-        - text: Data Analysis Guides
-          href: https://devpsylab.github.io/DataAnalysis
-      - about.qmd
-    right:
-    - text: "Lab Wiki"
-      href: https://devpsylab.github.io/LabWiki
-    - text: "Lab Website"
-      href: https://developmental-psychopathology.lab.uiowa.edu
 
 format:
   html:
-    highlight-style: a11y
-    theme: cosmo
-    css: ["styles.css", "includes/custom.css", "font/css/roboto.css"]
     toc: true
     toc-depth: 5
     toc-title: Contents
     toc-location: right
     execute:
       error: true
-      warning: false
-    code-link: true
+      warning: true
     number-sections: true
     code-fold: show
     df-print: paged
@@ -58,13 +22,3 @@ format:
       source: true
       toggle: true
     link-external-newwindow: true
-    #include-in-header:
-    #  - "includes/google_analytics.html"
-    include-after-body:
-      - "includes/footer.html"
-    license: CC BY
-    author-meta: "Isaac T. Petersen"
-    date-meta: today
-
-lightbox: 
-  match: auto
